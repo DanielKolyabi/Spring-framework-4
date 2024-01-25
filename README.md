@@ -24,3 +24,9 @@
 
 по адресу http://localhost:8080/products
 
+Список продуктов:
+![списокПродуктов](https://github.com/ShumAhd/Spring-framework-4/blob/main/img/2024-01-25_213251.jpg)
+
+Профиль продукта:
+![профильПродукта](https://github.com/ShumAhd/Spring-framework-4/blob/main/img/2024-01-25_213308.jpg)
+
