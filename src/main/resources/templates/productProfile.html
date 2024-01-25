@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+         <title>Product Profile</title>
+    </head>
+    <body>
+        <h1 th:text="'Profile of ' + ${food.name}">Product Name</h1>
+    <p>ID: <span th:text="${food.id}">Product ID</span></p>
+    <p>Category: <span th:text="${food.category}">Product Category</span></p>
+    </body>
+</html>
