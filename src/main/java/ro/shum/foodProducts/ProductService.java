@@ -1,0 +1,22 @@
+package ro.shum.foodProducts;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ProductService {
+  @Autowired
+  private ProductRepository productRepository;
+
+  public List<Product> getAllProducts() {
+    productRepository.save(new Product(null, "Apple", "Fruits"));
+    productRepository.save(new Product(null, "Carrot", "Vegetables"));
+    productRepository.save(new Product(null, "Milk", "Dairy"));
+    return productRepository.findAll();
+  }
+
+  public Product getProductByID(Long id) {
+    return productRepository.findById(id);
+  }
+}
