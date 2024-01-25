@@ -7,8 +7,12 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.stereotype.Component;
 
+/**
+ * Репозиторий для управления хранением продуктов.
+ */
 @Component
 public class ProductRepository {
+
   private Map<Long, Product> products = new ConcurrentHashMap<>();
   private AtomicLong counter = new AtomicLong();
 

@@ -2,8 +2,12 @@ package ro.shum.foodProducts;
 
 import lombok.Data;
 
+/**
+ * Класс модели, представляющий продукт питания.
+ */
 @Data
 public class Product {
+
   private Long id;
   private String name;
   private String category;

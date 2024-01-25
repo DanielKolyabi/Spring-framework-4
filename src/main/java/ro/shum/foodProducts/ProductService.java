@@ -4,8 +4,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * Сервис, использующий ProductRepository для получения информации о продуктах.
+ */
 @Service
 public class ProductService {
+
   @Autowired
   private ProductRepository productRepository;
 
